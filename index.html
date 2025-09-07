@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple Tic Tac Toe game">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="game-mode-selection">
+            <h2>Choose Game Mode</h2>
+            <div class="mode-buttons">
+                <button id="two-player-mode" class="mode-button active" aria-pressed="true">Two Players</button>
+                <button id="computer-mode" class="mode-button" aria-pressed="false">Play vs Computer</button>
+            </div>
+            <p id="mode-description">Current mode: Two Players</p>
+        </div>
+        <div class="theme-toggle">
+            <button id="theme-toggle" aria-label="Toggle theme">Switch to Dark Theme</button>
+        </div>
+        <div class="game-info" aria-live="polite">
+            <p id="turn" role="status">Player X's turn</p>
+            <p id="result" role="alert"></p>
+        </div>
+        <div class="board" role="grid">
+            <div class="cell" data-index="0" role="gridcell" tabindex="0" aria-label="Empty cell"></div>
+            <div class="cell" data-index="1" role="gridcell" tabindex="0" aria-label="Empty cell"></div>
+            <div class="cell" data-index="2" role="gridcell" tabindex="0" aria-label="Empty cell"></div>
+            <div class="cell" data-index="3" role="gridcell" tabindex="0" aria-label="Empty cell"></div>
+            <div class="cell" data-index="4" role="gridcell" tabindex="0" aria-label="Empty cell"></div>
+            <div class="cell" data-index="5" role="gridcell" tabindex="0" aria-label="Empty cell"></div>
+            <div class="cell" data-index="6" role="gridcell" tabindex="0" aria-label="Empty cell"></div>
+            <div class="cell" data-index="7" role="gridcell" tabindex="0" aria-label="Empty cell"></div>
+            <div class="cell" data-index="8" role="gridcell" tabindex="0" aria-label="Empty cell"></div>
+        </div>
+        <button id="reset" aria-label="Reset game">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
